@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TS5226BN');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>LexJM Soluciones - Tarjeta Digital</title>
+    <!-- Tailwind CSS para diseño responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para los íconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Fuentes de Google: Cinzel (Elegante/Serif) y Lato (Moderna/Sans-serif) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
+
+        :root {
+            --primary-bg: #0f172a;
+            --card-gradient: linear-gradient(145deg, rgba(26, 42, 64, 0.98) 0%, rgba(15, 23, 42, 0.98) 100%);
+            --silver-text: linear-gradient(to bottom right, #e2e8f0 0%, #94a3b8 50%, #cbd5e1 100%);
+        }
+
+        body {
+            background-color: var(--primary-bg);
+            background-image: radial-gradient(circle at top right, #1e293b, #0f172a);
+            font-family: 'Lato', sans-serif;
+            color: #e2e8f0;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        @media (min-width: 768px) {
+            body {
+                align-items: center;
+                padding: 20px;
+            }
+        }
+
+        .card-container {
+            width: 100%;
+            max-width: 500px; 
+            background: var(--card-gradient);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            box-shadow: 0 0 60px rgba(0,0,0,0.5);
+        }
+
+        @media (min-width: 768px) {
+            .card-container {
+                min-height: auto;
+                max-height: 96vh;
+                border-radius: 40px;
+                border: 1px solid rgba(255,255,255,0.1);
+                overflow-y: auto;
+            }
+        }
+
+        .text-silver {
+            background: var(--silver-text);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-family: 'Cinzel', serif;
+            text-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .border-silver {
+            background: linear-gradient(to right, transparent, #94a3b8, transparent);
+            height: 1px;
+            border: none;
+        }
+
+        .btn-specialty {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(148, 163, 184, 0.15);
+            backdrop-filter: blur(12px);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .btn-specialty:hover, .btn-specialty:active {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-4px);
+        }
+
+        .contact-link {
+            transition: all 0.3s ease;
+            border-radius: 16px;
+        }
+        
+        .contact-link:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .logo-wrapper {
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo-wrapper img {
+            width: 100%;
+            height: auto;
+            transform: scale(1.25);
+            transform-origin: center;
+            pointer-events: none;
+        }
+
+        .identity-block {
+            position: relative;
+            z-index: 10;
+            margin-top: -3.8rem; 
+        }
+        
+        @media (min-width: 480px) {
+            .identity-block { margin-top: -4.8rem; }
+        }
+
+        /* Ocultar scrollbar */
+        .card-container::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-slate-700 selection:text-white">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/gtm.js?id=GTM-TS5226BN"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="card-container">
+        
+        <!-- ================= CABECERA (LOGO E IDENTIDAD) ================= -->
+        <header class="w-full flex flex-col items-center text-center">
+            
+            <div class="logo-wrapper">
+                <img src="https://lh3.googleusercontent.com/d/1chXrk5631coiLUFbNhq-E2d9mEghNtBT" 
+                     alt="Logo LexJM Soluciones">
+            </div>
+            
+            <div class="identity-block px-8 w-full">
+                <h1 class="text-silver text-2xl md:text-3xl font-bold tracking-[0.25em] mb-1 uppercase leading-tight">
+                    LexJM Soluciones <br>
+                    <span class="text-lg md:text-xl tracking-[0.15em]">y Asociados</span>
+                </h1>
+                
+                <div class="w-full border-silver my-3"></div>
+                
+                <!-- Ajuste de tamaño del nombre: ligeramente más pequeño -->
+                <h2 class="text-silver text-lg md:text-xl font-semibold tracking-wide">Lic. José Martín Cerrillo Cardoza</h2>
+                <p class="text-gray-400 text-sm md:text-base italic mt-1 font-serif">Abogado</p>
+                
+                <div class="inline-block mt-3 px-8 py-2 border border-slate-500 rounded-xl text-xs md:text-sm text-slate-200 font-serif tracking-widest bg-black/40 backdrop-blur-md">
+                    CÉDULA PROFESIONAL 12524538
+                </div>
+
+                <div class="w-1/2 mx-auto border-silver my-6"></div>
+                
+                <p class="text-silver text-2xl md:text-3xl font-bold italic tracking-[0.1em]">Estrategia Legal</p>
+            </div>
+        </header>
+
+        <!-- ================= SERVICIOS (GRID CON DESCRIPCIONES DETALLADAS) ================= -->
+        <section class="w-full px-6 mt-4">
+            <div class="text-center mb-6">
+                <h3 class="text-silver text-lg font-bold uppercase tracking-[0.2em]">Consultoría Legal Integral</h3>
+                <p class="text-slate-300 text-xs mt-1 font-medium italic">Asesoría y representación para personas físicas y morales.</p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+                <!-- 1. Penal -->
+                <a href="https://wa.me/5214774671253?text=Hola,%20solicito%20asesor%C3%ADa%20en%20Derecho%20Penal." target="_blank" class="btn-specialty rounded-3xl p-4 flex flex-col items-center justify-center text-center group">
+                    <i class="fa-solid fa-gavel text-xl text-slate-400 mb-1 group-hover:text-white transition-colors"></i>
+                    <span class="text-xs font-bold text-slate-200 uppercase tracking-wider">Penal</span>
+                    <span class="text-[9px] text-slate-400 mt-1 leading-tight group-hover:text-slate-200">Defensa, denuncias y procesos penales.</span>
+                </a>
+
+                <!-- 2. Amparo -->
+                <a href="https://wa.me/5214774671253?text=Hola,%20solicito%20asesor%C3%ADa%20en%20Juicio%20de%20Amparo." target="_blank" class="btn-specialty rounded-3xl p-4 flex flex-col items-center justify-center text-center group">
+                    <i class="fa-solid fa-file-shield text-xl text-slate-400 mb-1 group-hover:text-white transition-colors"></i>
+                    <span class="text-xs font-bold text-slate-200 uppercase tracking-wider">Amparo</span>
+                    <span class="text-[9px] text-slate-400 mt-1 leading-tight group-hover:text-slate-200">Juicios contra actos de autoridad y recursos.</span>
+                </a>
+
+                <!-- 3. Familiar -->
+                <a href="https://wa.me/5214774671253?text=Hola,%20solicito%20asesor%C3%ADa%20en%20Derecho%20Familiar." target="_blank" class="btn-specialty rounded-3xl p-4 flex flex-col items-center justify-center text-center group">
+                    <i class="fa-solid fa-users-rectangle text-xl text-slate-400 mb-1 group-hover:text-white transition-colors"></i>
+                    <span class="text-xs font-bold text-slate-200 uppercase tracking-wider">Familiar</span>
+                    <span class="text-[9px] text-slate-400 mt-1 leading-tight group-hover:text-slate-200">Divorcios, pensiones, custodias y sucesiones.</span>
+                </a>
+
+                <!-- 4. Derechos Humanos -->
+                <a href="https://wa.me/5214774671253?text=Hola,%20solicito%20asesor%C3%ADa%20en%20Derechos%20Humanos." target="_blank" class="btn-specialty rounded-3xl p-4 flex flex-col items-center justify-center text-center group">
+                    <i class="fa-solid fa-scale-balanced text-xl text-slate-400 mb-1 group-hover:text-white transition-colors"></i>
+                    <span class="text-xs font-bold text-slate-200 uppercase tracking-wider">D. Humanos</span>
+                    <span class="text-[9px] text-slate-400 mt-1 leading-tight group-hover:text-slate-200">Protección de garantías y quejas ante organismos.</span>
+                </a>
+
+                <!-- 5. Laboral -->
+                <a href="https://wa.me/5214774671253?text=Hola,%20solicito%20asesor%C3%ADa%20en%20Derecho%20Laboral." target="_blank" class="btn-specialty rounded-3xl p-4 flex flex-col items-center justify-center text-center group">
+                    <i class="fa-solid fa-briefcase text-xl text-slate-400 mb-1 group-hover:text-slate-100 transition-colors"></i>
+                    <span class="text-xs font-bold text-slate-200 uppercase tracking-wider">Laboral</span>
+                    <span class="text-[9px] text-slate-400 mt-1 leading-tight group-hover:text-slate-200">Despidos injustificados, finiquitos y contratos.</span>
+                </a>
+
+                <!-- 6. Civil -->
+                <a href="https://wa.me/5214774671253?text=Hola,%20solicito%20asesor%C3%ADa%20en%20Derecho%20Civil." target="_blank" class="btn-specialty rounded-3xl p-4 flex flex-col items-center justify-center text-center group">
+                    <i class="fa-solid fa-handshake-angle text-xl text-slate-400 mb-1 group-hover:text-white transition-colors"></i>
+                    <span class="text-xs font-bold text-slate-200 uppercase tracking-wider">Civil</span>
+                    <span class="text-[9px] text-slate-400 mt-1 leading-tight group-hover:text-slate-200">Contratos, arrendamientos y juicios de propiedad.</span>
+                </a>
+
+                <!-- 7. Mercantil -->
+                <a href="https://wa.me/5214774671253?text=Hola,%20solicito%20asesor%C3%ADa%20en%20Derecho%20Mercantil." target="_blank" class="btn-specialty rounded-3xl p-4 flex flex-col items-center justify-center text-center group">
+                    <i class="fa-solid fa-landmark text-xl text-slate-400 mb-1 group-hover:text-white transition-colors"></i>
+                    <span class="text-xs font-bold text-slate-200 uppercase tracking-wider">Mercantil</span>
+                    <span class="text-[9px] text-slate-400 mt-1 leading-tight group-hover:text-slate-200">Cobranza de pagarés, cheques y sociedades.</span>
+                </a>
+
+                <!-- 8. Protección Patrimonial -->
+                <a href="https://wa.me/5214774671253?text=Hola,%20solicito%20asesor%C3%ADa%20en%20Protecci%C3%B3n%20Patrimonial." target="_blank" class="btn-specialty rounded-3xl p-4 flex flex-col items-center justify-center text-center group">
+                    <i class="fa-solid fa-shield-halved text-xl text-slate-400 mb-1 group-hover:text-white transition-colors"></i>
+                    <span class="text-[9px] font-bold text-slate-200 uppercase leading-none tracking-tight">P. Patrimonial</span>
+                    <span class="text-[9px] text-slate-400 mt-1 leading-tight group-hover:text-slate-200">Pólizas jurídicas e inmobiliarias de blindaje.</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ================= CONTACTO (LISTADO COMPACTO) ================= -->
+        <section class="w-full px-6 flex flex-col space-y-0.5 mt-6">
+            <a href="https://wa.me/5214774671253" target="_blank" class="contact-link flex items-center py-2 px-4 text-slate-300 decoration-none">
+                <i class="fa-brands fa-whatsapp text-2xl w-10 text-center text-[#25D366]"></i>
+                <span class="ml-4 text-sm font-medium tracking-wide">477 467 1253</span>
+            </a>
+            <a href="https://www.facebook.com/Lexjmsolucions/" target="_blank" class="contact-link flex items-center py-2 px-4 text-slate-300 decoration-none">
+                <i class="fa-brands fa-facebook text-2xl w-10 text-center text-[#1877F2]"></i>
+                <span class="ml-4 text-sm font-medium tracking-wide">LexJM Soluciones</span>
+            </a>
+            <a href="https://instagram.com/lexJM_soluciones" target="_blank" class="contact-link flex items-center py-2 px-4 text-slate-300 decoration-none">
+                <i class="fa-brands fa-instagram text-2xl w-10 text-center text-[#E1306C]"></i>
+                <span class="ml-4 text-sm font-medium tracking-wide">@lexJM_soluciones</span>
+            </a>
+            <a href="mailto:lexjmsoluciones@gmail.com" class="contact-link flex items-center py-2 px-4 text-slate-300 decoration-none">
+                <i class="fa-regular fa-envelope text-xl w-10 text-center text-slate-400"></i>
+                <span class="ml-4 text-sm font-medium break-all tracking-wide">lexjmsoluciones@gmail.com</span>
+            </a>
+            <a href="https://maps.google.com/?q=Av.+Marcos+de+Arrieta+No.+320,+Col.+Las+Trojes,+León,+Gto." target="_blank" class="contact-link flex items-start py-2 px-4 text-slate-300 decoration-none">
+                <i class="fa-solid fa-location-dot text-xl w-10 text-center mt-0.5 text-[#EA4335]"></i>
+                <span class="ml-4 text-sm font-medium leading-relaxed tracking-wide">
+                    Av. Marcos de Arrieta No. 320, Las Trojes, León.
+                </span>
+            </a>
+        </section>
+
+        <!-- ================= FOOTER (AL LÍMITE INFERIOR) ================= -->
+        <footer class="w-full text-center px-8 py-6 mt-auto">
+            <div class="w-full border-silver mb-4"></div>
+            <p class="text-[9px] text-slate-500 leading-relaxed font-serif uppercase tracking-[0.3em]">
+                Privacidad y confidencialidad jurídica garantizada.
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
